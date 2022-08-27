@@ -12,20 +12,18 @@ public class Book
     public string Descriotion { get; }
     public decimal Price { get; }
 
-    public Book (int id, string isbn, string author, string title, string descriotion, decimal price)
+    public Book (int id, string isbn, string author, string title, string description, decimal price)
     {
         Id = id;
         Title = title;
         Isbn = isbn;
         Author = author;
-        Descriotion = descriotion;
+        Descriotion = description;
         Price = price;
     }
 
     internal static bool IsIsbn(string s)
     {
-
-
         if (s == null)
             return false;
 
